@@ -31,6 +31,18 @@ public class Transfer {
     
     private LocalDate schedulingDate;
 
+    public Transfer() {
+
+    }
+
+    public Transfer(Long id, String originAccount, String destinationAccount, BigDecimal amount, LocalDate transferDate) {
+        this.id = id;
+        this.originAccount = originAccount;
+        this.destinationAccount = destinationAccount;
+        this.amount = amount;
+        this.transferDate = transferDate;
+    }
+
 	public Long getId() {
 		return id;
 	}
